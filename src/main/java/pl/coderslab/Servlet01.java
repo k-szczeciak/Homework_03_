@@ -69,21 +69,12 @@ public class Servlet01 extends HttpServlet {
                 default:response.getWriter().append("niewaciwa wartość");
             }
         }
-        //response.getWriter().append(String.valueOf(result)).append("<br>");
-
-
-
-        //response.getWriter().append("amount: ").append(amount).append(", ").append(curPair);
-
-
-
-
-
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=utf-8");
+        response.getWriter().append("doGet");
 
     }
 }
