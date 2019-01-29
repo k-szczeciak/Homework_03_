@@ -5,30 +5,43 @@
 </head>
 <body>
 <h1>Moduł 3 - homework 03</h1>
-<p>...</p>
 
 <!--<a href="/Servlet01">Zadanie 1:</a><br>-->
 
 <br>
-Zadanie 1
-<form action="/Servlet01" method="post">
-    <input type="number" step="0.01" name="amount" placeholder="wartość"> <br><br>
-    <input type="radio" name="curPair" value="EUR_USD"> EUR &#8680 USD<br>
-    <input type="radio" name="curPair" value="USD_EUR"> USD &#8680 EUR<br>
-    <input type="radio" name="curPair" value="EUR_PLN"> EUR &#8680 PLN<br>
-    <input type="radio" name="curPair" value="PLN_EUR"> PLN &#8680 EUR<br>
-    <input type="radio" name="curPair" value="USD_PLN"> USD &#8680 PLN<br>
-    <input type="radio" name="curPair" value="PLN_USD"> PLN &#8680 USD<br><br>
-    <input type="submit" value="OBLICZ">
-</form>
-<br><br>
-zadanie 2:<br>
-podaj wartość binarną (ciąg: "0" lub "1"):<br>
-<form action="/Servlet02" method="post">
-    <input type="number" name="number" placeholder="liczba"> <br><br>
-    <input type="submit" value="PRZESLIJ">
-</form>
-<br><br>
+<div>
+    <h3>Zadanie 1</h3>
+    <p>
+    <form action="/Servlet01" method="post">
+        <input type="number" step="0.01" name="amount" placeholder="wartość"> <br><br>
+        <input type="radio" name="curPair" value="EUR_USD"> EUR &#8680 USD<br>
+        <input type="radio" name="curPair" value="USD_EUR"> USD &#8680 EUR<br>
+        <input type="radio" name="curPair" value="EUR_PLN"> EUR &#8680 PLN<br>
+        <input type="radio" name="curPair" value="PLN_EUR"> PLN &#8680 EUR<br>
+        <input type="radio" name="curPair" value="USD_PLN"> USD &#8680 PLN<br>
+        <input type="radio" name="curPair" value="PLN_USD"> PLN &#8680 USD<br><br>
+        <input type="submit" value="OBLICZ">
+    </form>
+    </p>
+</div>
+<div>
+    <h3>zadanie 2:</h3>
+    <p>
+    podaj wartość binarną (ciąg: "0" lub "1"):<br>
+    <form action="/Servlet02" method="post">
+        <input type="number" name="number" placeholder="liczba"> <br><br>
+        <input type="submit" value="PRZESLIJ">
+    </form>
+    </p>
+</div>
 
+<div>
+    <a href = "/Servlet03" > Zadanie 3</a>
+<!--
+    <form action='/Servlet01' method='post'>
+        <input type="text" name="value1" placeholder="value1"><br>
+        <input type="submit" value="Wyslij">
+    </form>-->
+</div>
 </body>
 </html>
