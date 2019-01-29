@@ -14,7 +14,7 @@ import java.util.List;
 public class Servlet03 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=utf-8");
-
+        //response.sendRedirect("doGet");
         // session request
         HttpSession sess = request.getSession();
 
@@ -52,6 +52,5 @@ public class Servlet03 extends HttpServlet {
             response.getWriter().append("<input type='text' name='value" + i + "' placeholder='value" + i + "'><br>");
         }
         response.getWriter().append("<input type='submit' value='Wyslij'></form>");
-
     }
 }
